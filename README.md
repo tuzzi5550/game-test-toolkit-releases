@@ -1,26 +1,21 @@
 # 游戏测试工具箱
 
-Windows 游戏测试工具，包含参数定位器、安装工具与手机网络测试工具。
+Windows 桌面测试工具，集成参数定位器、安装工具和手机网络测试工具。
 
-## 下载与更新
+[下载最新版本](https://github.com/tuzzi5550/game-test-toolkit-releases/releases/latest/download/GameTestToolkit.exe) · [版本与更新说明](https://github.com/tuzzi5550/game-test-toolkit-releases/releases/latest)
 
-从 [最新版本](https://github.com/tuzzi5550/game-test-toolkit-releases/releases/latest) 下载 `GameTestToolkit.exe`，保存到可写目录（例如桌面），关闭旧程序后打开。可将文件重命名为“游戏测试工具箱.exe”，无需额外安装。
+## 使用与更新
 
-v1.1.30 起，顶部提供“检测更新”。点击后手动检查；发现新版本会在按钮左侧显示提示及“更新”按钮。点击“更新”下载、校验并替换当前 EXE，然后重新打开。存在正在进行的工具任务时，先等待任务结束。
+下载 EXE，放在可写目录运行，也可以重命名为“游戏测试工具箱.exe”。设备操作使用本机连接的手机或模拟器；手机需要开启 USB 调试并授权。
 
-更新会保留本机配置、上次使用的页面和已导入的签名信息，并备份旧 EXE。下载失败或校验不通过时不替换原程序。如更新目录不能写入，可从本页手动下载新版。
-
-稳定下载地址：
-
-- [最新 EXE](https://github.com/tuzzi5550/game-test-toolkit-releases/releases/latest/download/GameTestToolkit.exe)
-- [最新版本清单](https://github.com/tuzzi5550/game-test-toolkit-releases/releases/latest/download/version.json)
+从 v1.1.31 起，顶部“检测更新”可以手动查询新版本。发现新版本后，左侧显示提示及“更新”按钮。点击后下载并校验文件，备份旧 EXE、替换程序并重新打开。更新不清除本机配置和已导入密钥。检测或下载失败时可重试，也可以从本页手动下载。更新需要能够访问 GitHub 及其发布文件下载服务。
 
 ## 签名密钥
 
-AAB 转换需要在安装工具中点击“加入密钥”，选择由提供者私下提供的密钥文件；同一电脑、同一 Windows 用户只需导入一次，更新后继续生效。普通 APK 和已生成 APKS 的安装不要求此密钥。
+需要签名的操作，在安装工具中点击“加入密钥”，导入你有权限使用的密钥文件。每台电脑、每个 Windows 用户导入一次，同一用户后续更新无需重新导入。普通 APK 安装保留原流程。
 
-本仓库只分发经过检查的正式 EXE、版本清单与公开说明，不上传签名密钥、本机配置、设备日志或源码。密钥文件应单独妥善保管，不能作为公开下载附件。
+密钥文件由持有者私下保管和提供，本仓库不提供密钥。
 
-## 系统要求
+## 发布范围
 
-Windows 10/11。ADB 设备需由使用者连接和授权；运行环境随 EXE 提供。弱网、安装及其他原有工具功能以客户端提示为准。
+每个正式版本仅提供 `GameTestToolkit.exe`、`version.json` 和更新说明。版本清单包含版本号、下载地址、文件大小及 SHA256 校验值。这里只分发客户端，不上传用户配置、设备日志、签名密钥或工作区源码。
